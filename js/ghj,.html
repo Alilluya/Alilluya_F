@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Возрастное ограничение</title>
+    <script>
+        window.onload = function() {
+            var age = prompt("Сколько вам лет?");
+            if (age === null || age === "" || isNaN(age) || age < 15) {
+                // Если возраст меньше 15 или введено некорректное значение
+                alert("Добро пожаловать!");
+                window.location.href = "file:///D:/siteJS/index.html"; // Замените на URL, куда хотите перенаправить
+            } else {
+                // Если возраст 15 или больше, можно продолжить
+                alert("Извините, доступ запрещен.");
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>Добро пожаловать на наш сайт!</h1>
+    <p>Контент вашего сайта здесь.</p>
+</body>
+</html>
